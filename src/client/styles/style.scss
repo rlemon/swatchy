@@ -1,0 +1,33 @@
+body {
+	margin:40px auto;
+	max-width:650px;
+	line-height:1.6;
+	font-size:18px;
+	color:#444;
+	padding:0 10px;
+	color: #242424;
+	background: #efefef;
+}
+h1,
+h2,
+h3 {
+	line-height:1.2;
+}
+code, 
+pre,
+pre code {
+	font-size: 10px;
+	line-height: 12px;
+}
+textarea, 
+input[type="text"] {
+	width: 100%; 
+}
+textarea {
+	height: 128px;
+}
+button {
+	background: inherit;
+	color: inherit;
+	border: 1px solid #ccc;
+}
