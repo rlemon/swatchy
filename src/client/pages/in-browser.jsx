@@ -27,6 +27,13 @@ export default class InBrowser extends React.Component {
 	handleKeyDown(event) {
 		this.setState({cssInput: this.refs.input.value}, _ => this.doSwatchy());
 	}
+
+	/* 	check out how babeljs.io/repl does it 
+		it looks like they're using a debounce script on the keydown.
+		on error they display a warning, which is also nice. 
+		they also have the options as checkboxes.. which I should do
+
+	*/
 	render() {
 		return <section className="component__section">
 					<h2 className="component__sub-title">Try Swatchy!</h2>
