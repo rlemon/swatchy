@@ -1,0 +1,21 @@
+export default [
+	'background',
+	'color',
+	'background-color',
+	'border-color',
+	'box-shadow',
+	'border-top-color',
+	'border-right-color',
+	'border-bottom-color',
+	'border-left-color',
+	'border',
+	'border-bottom',
+	'border-left',
+	'border-right',
+	'border-top',
+	'text-shadow',
+	'-webkit-text-fill-color',
+	'background-image',
+	'stroke',
+	'fill'
+];

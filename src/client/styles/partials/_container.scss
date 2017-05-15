@@ -1,0 +1,73 @@
+/* =============================================================================
+	PRIMARY LAYOUT STUFF
+============================================================================= */
+
+.container {
+	margin: 0 auto;
+	padding: 0 12px;
+	max-width: 960px;
+}
+
+@media all and ( min-width: $breakpoint--small ) {
+
+	.container {
+		padding: 0 24px;
+	}
+
+}
+
+@media all and ( min-width: $breakpoint--medium ) {
+
+	.container {
+		padding: 0 48px;
+	}
+
+}
+
+
+/* =============================================================================
+	VERTICAL AND HORIZONTAL CENTERING
+============================================================================= */
+
+.banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 180px;
+	background-color: $color--neutral-xdark;
+}
+
+.banner__content {
+	text-align: center;
+}
+
+.banner__title,
+.banner__sub {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+@media all and ( min-width: 480px ) {
+
+	.banner {
+		height: 240px;
+	}
+
+}
+
+@media all and ( min-width: 768px ) {
+
+	.banner {
+		height: 360px;
+	}
+
+}
+
+@media all and ( min-width: 960px ) {
+
+	.banner {
+		height: 480px;
+	}
+
+}

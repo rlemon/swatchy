@@ -22,6 +22,8 @@ gulp.task('build-client', _ => {
 gulp.task('build-server', _ => {
 	return gulp.src(paths.src)
 		.pipe(babel())
-		.pipe(rename( path => path.dirname = './' )) // put the server output in the top level of lib
+		//.pipe(rename( path => path.dirname = './' )) // put the server output in the top level of lib
 		.pipe(gulp.dest(paths.dest))
 })
+
+gulp.task('build-all', ['build-client', 'build-server']);

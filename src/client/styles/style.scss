@@ -1,33 +1,60 @@
-body {
-	margin:40px auto;
-	max-width:650px;
-	line-height:1.6;
-	font-size:18px;
-	color:#444;
-	padding:0 10px;
-	color: #242424;
-	background: #efefef;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-h1,
-h2,
-h3 {
-	line-height:1.2;
+
+@import "config/variables";
+
+@import "partials/common";
+@import "partials/grid";
+@import "partials/content";
+@import "partials/container";
+@import "partials/component";
+@import "partials/footer";
+@import "partials/header";
+
+
+.code-area {
+	width: 100%;
 }
-code, 
-pre,
-pre code {
-	font-size: 10px;
-	line-height: 12px;
+.code-area__title {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	line-height: $line-height--medium;
+	text-align: center;
 }
-textarea, 
-input[type="text"] {
+.code-area__input {
 	width: 100%; 
+	border: none;
+	outline: none;
+	padding: 8px;
+	background-color: $color--neutral-xdark;
+	color: $color--neutral-xlight;
+	resize: none;
 }
-textarea {
-	height: 128px;
+
+@media all and ( min-width: 480px ) {
+
+	.code-area__input {
+		height: 240px;
+	}
+
 }
-button {
-	background: inherit;
-	color: inherit;
-	border: 1px solid #ccc;
+
+@media all and ( min-width: 768px ) {
+
+	.code-area__input {
+		height: 360px;
+	}
+
+}
+
+@media all and ( min-width: 960px ) {
+
+	.code-area__input {
+		height: 480px;
+	}
+
 }

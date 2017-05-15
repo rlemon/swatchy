@@ -40,10 +40,12 @@
     "webpack-bundle-size-analyzer": "^2.6.0"
   },
   "dependencies": {
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-router": "^3.0.5",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4"
   }

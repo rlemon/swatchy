@@ -1,0 +1,24 @@
+/* =============================================================================
+	APP FOOTER
+============================================================================= */
+
+.app-footer {
+	padding: 12px 0;
+	text-align: center;
+}
+
+@media all and ( min-width: $breakpoint--small ) {
+
+	.app-footer {
+		padding: 24px 0;
+	}
+
+}
+
+@media all and ( min-width: $breakpoint--medium ) {
+
+	.app-footer {
+		padding: 48px 0;
+	}
+
+}
