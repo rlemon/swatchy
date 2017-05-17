@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ColorPicker from '../components/color-picker';
+
 export default class InBrowser extends React.Component {
 	constructor(props) {
 		super(props);
@@ -27,7 +29,9 @@ export default class InBrowser extends React.Component {
 	handleKeyDown(event) {
 		this.setState({cssInput: this.refs.input.value}, _ => this.doSwatchy());
 	}
-
+	handleColorPicker() {
+		console.log(this.refs.doeshaveref);
+	}
 	/* 	check out how babeljs.io/repl does it 
 		it looks like they're using a debounce script on the keydown.
 		on error they display a warning, which is also nice. 
@@ -38,6 +42,12 @@ export default class InBrowser extends React.Component {
 		return <section className="component__section">
 					<h2 className="component__sub-title">Try Swatchy!</h2>
 					<div className="grid">
+						<div className="grid__row grid__row--md">
+							<div className="grid__item swatch-area">
+								<ColorPicker 
+									onClick={_ => this.handleColorPicker()} />
+							</div>
+						</div>
 						<div className="grid__row grid__row--md">
 							<div className="grid__item code-area">
 								<h3 className="code-area__title">Original CSS</h3>
